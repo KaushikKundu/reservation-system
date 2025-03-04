@@ -2,9 +2,9 @@ import express,{Request,Response, Router} from "express"
 const app = express();
 const port = 3000;
 
-import userRouter from "./controllers/userRoutes";
-import bookingRouter from "./controllers/bookingRoutes";
-import movieRouter from "./controllers/movieRoutes";
+import userRouter from "./routes/userRoutes";
+import bookingRouter from "./routes/bookingRoutes";
+import movieRouter from "./routes/movieRoutes";
 
 app.use('/api/v1/users',userRouter)
 app.use('/api/v1/movie',movieRouter)
